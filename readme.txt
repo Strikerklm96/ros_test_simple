@@ -3,7 +3,7 @@ Install Ros
 
 
 Start Ros: roscore
-	To confirm that it is working, try running roscore in another terminal, if it says it can't start, the first one worked!
+	To confirm that it is working, try running roscore in another terminal, if it says it can't start, the first one worked! Leave the terminal that is running ros open.
 
 
 
@@ -14,6 +14,11 @@ Build The Talker Program:
 
 Build The Listener Program:
 	g++ listener.cpp -o listener -I/opt/ros/hydro/include -L/opt/ros/hydro/lib -Wl,-rpath,/opt/ros/hydro/lib -lroscpp -lrosconsole -lrostime -lroscpp_serialization
+
+
+Run The Programs
+	./listener
+	./talker
 
 
 Other:
